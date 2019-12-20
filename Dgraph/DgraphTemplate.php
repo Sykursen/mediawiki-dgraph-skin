@@ -105,13 +105,6 @@ class DgraphTemplate extends BaseTemplate {
 					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
 					?>"><img src="<?php echo $assetsPath; ?>/assets/images/logo.svg" width="233" height="70" alt=""></a></figure>
 				  </div>
-				  <div class="col-6 col-desktop-8">
-					<nav class="page-nav">
-					  <ul class="page-nav__list page-nav__list--right">
-						<li class="page-nav__item"><a href="https://github.com/dgraph-io/dgraph" data-style="mega" data-count-href="/dgraph-io/dgraph/stargazers" data-count-api="/repos/dgraph-io/dgraph#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star dgraph-io/dgraph on GitHub" class="github-button">Star</a></li>
-					  </ul>
-					</nav>
-				  </div>
 				</div>
 			  </div>
 			</div>
@@ -130,7 +123,7 @@ class DgraphTemplate extends BaseTemplate {
 						  </form>
 						</li>
 						<li class="page-nav__item page-nav__item--box"><a href="#settings-dropdown" class="page-nav__link js-dropdown-trigger dropdown-trigger"><img src="<?php echo $assetsPath; ?>/assets/images/icon-gear.png" alt="Settings" class="page-nav__link-icon"></a>
-						  <div id="settings-dropdown" class="dropdown page-nav__settings-dropdown"> 
+						  <div id="settings-dropdown" class="dropdown page-nav__settings-dropdown">
 							<ul class="dropdown__list"<?php $this->html( 'userlangattributes' ) ?>>
 								<?php
 								foreach ( $this->data['view_urls'] as $link ) {
@@ -168,7 +161,7 @@ class DgraphTemplate extends BaseTemplate {
 						  </div>
 						</li>
 						<li class="page-nav__item page-nav__item--box"><a href="#user-dropdown" class="page-nav__link js-dropdown-trigger dropdown-trigger"><img src="<?php echo $assetsPath; ?>/assets/images/icon-user.png" alt="User Settings" class="page-nav__link-icon"></a>
-						  <div id="user-dropdown" class="dropdown page-nav__user-dropdown"> 
+						  <div id="user-dropdown" class="dropdown page-nav__user-dropdown">
 							<ul class="dropdown__list"<?php $this->html( 'userlangattributes' ) ?>>
 								<?php
 								$personalTools = $this->getPersonalTools();
@@ -178,7 +171,7 @@ class DgraphTemplate extends BaseTemplate {
 										foreach ( $item['links'] as $linkKey => &$link ) {
 											$link['class'] = 'dropdown__link';
 										}
-									} else { 
+									} else {
 										// TODO
 									}
 									echo $this->makeListItem( $key, $item );
@@ -223,9 +216,9 @@ class DgraphTemplate extends BaseTemplate {
 						</li>
 						<li class="page-nav__item"><a href="#" class="page-nav__link">Discussion</a></li>
 						<li class="page-nav__item page-nav__item--right dropdown-environment"><a href="#more-dropdown" class="page-nav__button js-dropdown-trigger dropdown-trigger">
-							 
+
 							More<img src="<?php echo $assetsPath; ?>/assets/images/icon-chevron-down.png" alt="More information" class="page-nav__link-icon"></a>
-						  <div id="more-dropdown" class="dropdown page-nav__more-dropdown"> 
+						  <div id="more-dropdown" class="dropdown page-nav__more-dropdown">
 						  </div>
 						</li>
 					  </ul>
@@ -363,8 +356,6 @@ class DgraphTemplate extends BaseTemplate {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Minified script-->
   <script type="text/javascript" src="<?php echo $assetsPath; ?>/assets/js/script.min.js"></script>
-  <!-- GitHub star button-->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Highlight JS plugin-->
   <script type="text/javascript" src="<?php echo $assetsPath; ?>/assets/js/unminified/vendor/highlight-js/highlight.pack.js"></script>
   <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
