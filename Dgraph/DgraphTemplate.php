@@ -308,43 +308,17 @@ class DgraphTemplate extends BaseTemplate {
     <footer id="page-footer" class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-tablet-3">
-            <figure class="page-logo-footer"><a href="<?php
-					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
-					?>"><img src="<?php echo $assetsPath; ?>/assets/images/logo.svg" width="140" height="42" alt="Dgraph Logo"></a></figure>
-          </div>
-          <div class="col-4 col-tablet-2">
             <nav class="page-footer-nav">
-              <h6 class="page-footer-nav__title">Company</h6>
+              <h6 class="page-footer-nav__title">Un peu plus</h6>
               <ul class="page-footer-nav__list">
-                <li class="page-footer-nav__item"><a href="https://dgraph.io/" title="Learn more about us" class="page-footer-nav__link">dgraph.io</a></li>
+                <li class="page-footer-nav__item"><a href="https://data-rebelle.com" title="Mon site web" class="page-footer-nav__link">Site Web 🕸</a></li>
+                <li class="page-footer-nav__item"><a href="https://github.com/sykursen" title="Mon profil github" class="page-footer-nav__link link-alias">Github 📦</a></li>
+                <li class="page-footer-nav__item"><a href="https://twitter.com/sykursen" title="Mon profil twitter" class="page-footer-nav__link link-alias">Twitter 🐦</a></li>
               </ul>
             </nav>
-          </div>
-          <div class="col-4 col-tablet-2">
-            <nav class="page-footer-nav">
-              <h6 class="page-footer-nav__title">Community</h6>
-              <ul class="page-footer-nav__list">
-                <li class="page-footer-nav__item"><a href="https://open.dgraph.io/" title="Thoughts on usage of graph database." class="page-footer-nav__link">Blog</a></li>
-                <li class="page-footer-nav__item"><a href="https://wiki.dgraph.io" title="Discuss about Dgraph with us." target="_blank" class="page-footer-nav__link link-alias">Dgraph Wiki</a></li>
-                <li class="page-footer-nav__item"><a href="https://github.com/dgraph-io/dgraph" title="Wa are on GitHub, check it out." target="_blank" class="page-footer-nav__link link-alias">GitHub</a></li>
-                <li class="page-footer-nav__item"><a href="https://discuss.dgraph.io/" title="Discuss about Dgraph with us." target="_blank" class="page-footer-nav__link link-alias">Discuss</a></li>
-                <li class="page-footer-nav__item"><a href="https://slack.dgraph.io/" title="Slack about Dgraph with us." target="_blank" class="page-footer-nav__link link-alias">Slack</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-4 col-tablet-2">
-            <nav class="page-footer-nav">
-              <h6 class="page-footer-nav__title">Connect</h6>
-              <ul class="page-footer-nav__list">
-                <li class="page-footer-nav__item"><a href="https://twitter.com/dgraphlabs" title="Follow us on Twitter" target="_blank" class="page-footer-nav__link link-alias">Twitter</a></li>
-                <li class="page-footer-nav__item"><a href="https://angel.co/dgraph-labs" title="Dgraph on Angel List" target="_blank" class="page-footer-nav__link link-alias">Angel List</a></li>
-              </ul>
-            </nav>
-          </div>
         </div>
         <div class="row">
-          <div class="col-12"><span class="imprint__copyrights">Copyright &copy; 2016 Dgraph Labs, Inc.</span></div>
+          <div class="col-12"><span class="imprint__copyrights">Copyright &copy; 2020 Guillaume ASSIER.</span></div>
         </div>
       </div>
     </footer>
